@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.initConfig({
     less: {
       production: {
@@ -13,13 +14,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          cwd: 'static',
+          src: ['**'],
+          dest: 'built/'
+        }]
+      }
+    },
     watch: {
-      js: {
+      less: {
         files: ['less/*.less'],
         tasks: ['less']
       },
+      copy: {
+        files: ['static/**'],
+        tasks: ['copy']
+      }
     },
   });
 
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'copy']);
 };
