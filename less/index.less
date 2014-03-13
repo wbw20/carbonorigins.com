@@ -1,6 +1,7 @@
 @dark: #404041;
 @cyan: #29ABE2;
 @red: #CD3233;
+@white: white;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -9,10 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: @dark;
   margin: 0px;
-  min-width: 600px;
+  min-width: 800px;
 
   header {
-    background-color: white;
+    background-color: @white;
     height: 75px;
 
     .links {
@@ -23,7 +24,8 @@ body {
         margin: 10px 20px;
         text-decoration: none;
 
-        h4 {
+        h5 {
+          color: @blue;
           text-transform: uppercase;
         }
       }
@@ -34,5 +36,20 @@ body {
     background-image: url('image/saturn.jpg');
     background-size: 100%;
     height: 1000px;
+    padding: 300px 0px 0px 100px;
+
+    .buy {
+      height: 300px;
+      width: 450px;
+
+      h2 {
+        text-transform: uppercase;
+        color: @white;
+      }
+
+      h4 {
+        color: @white;
+      }
+    }
   }
 }
