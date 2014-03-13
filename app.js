@@ -3,7 +3,6 @@ var express = require('express'),
 
 var app = express();
 app.engine('.html', require('ejs').__express);
-// app.set('ejs', __dirname + '/ejs');
 app.set('views', __dirname + '/ejs');
 app.set('view engine', 'html');
 
