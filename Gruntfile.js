@@ -15,12 +15,11 @@ module.exports = function(grunt) {
     },
     watch: {
       js: {
-        files: ['js/**/*.js', 'html/*.html'],
-        tasks: ['concat', 'includes']
+        files: ['less/*.less'],
+        tasks: ['less']
       },
     },
   });
 
   grunt.registerTask('default', ['less']);
-  grunt.registerTask('server', ['connect', 'copy', 'watch']);
 };
