@@ -25,5 +25,11 @@
   "license": "None",
   "bugs": {
     "url": "https://github.com/wbw20/carbonorigins.com/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "~0.10.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-watch": "~0.6.0"
   }
 }
