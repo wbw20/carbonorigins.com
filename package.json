@@ -1,0 +1,29 @@
+{
+  "name": "carbonorigins.com",
+  "version": "0.0.0",
+  "description": "Retail website for Carbon Origins",
+  "dependencies": {
+    "express": "latest",
+    "ejs": "latest"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wbw20/carbonorigins.com"
+  },
+  "keywords": [
+    "Carbon",
+    "Origins",
+    "Retail",
+    "Rockets",
+    "69"
+  ],
+  "author": "William B. Wettersten",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/wbw20/carbonorigins.com/issues"
+  }
+}
