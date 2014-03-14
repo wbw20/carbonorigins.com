@@ -1,5 +1,5 @@
 $(document).ready(function() {
   setTimeout(function() {
-    alert('fuck');
+    $('.buy').css('opacity', 1.0);
   }, 3000);
 });
