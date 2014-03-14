@@ -2,6 +2,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.initConfig({
     less: {
       production: {
@@ -11,6 +12,13 @@ module.exports = function(grunt) {
         },
         files: {
           "built/index.css": "less/index.less"
+        }
+      }
+    },
+    uglify: {
+      js: {
+        files: {
+          'built/index.min.js': ['js/index.js']
         }
       }
     },
@@ -25,6 +33,10 @@ module.exports = function(grunt) {
       }
     },
     watch: {
+      uglify: {
+        files: ['js/*.js'],
+        tasks: ['uglify']
+      },
       less: {
         files: ['less/*.less'],
         tasks: ['less']
@@ -36,5 +48,5 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('default', ['less', 'copy']);
+  grunt.registerTask('default', ['less', 'uglify', 'copy']);
 };
