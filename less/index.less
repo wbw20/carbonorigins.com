@@ -1,7 +1,8 @@
 @dark: #404041;
 @cyan: #29ABE2;
 @red: #CD3233;
-@text: white;
+@text_color: white;
+@banner_color: rgba(0, 0, 0, 0.5);
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -12,8 +13,7 @@ body {
   min-width: 1400px;
 
   header {
-    background-color: black;
-    opacity: 0.50;
+    background-color: @banner_color;
     height: 75px;
     z-index: 1;
 
@@ -37,7 +37,7 @@ body {
         text-decoration: none;
 
         h5 {
-          color: @text;
+          color: @text_color;
           text-transform: uppercase;
         }
       }
@@ -68,11 +68,11 @@ body {
 
       h2 {
         text-transform: uppercase;
-        color: @text;
+        color: @text_color;
       }
 
       h4 {
-        color: @text;
+        color: @text_color;
       }
     }
   }
