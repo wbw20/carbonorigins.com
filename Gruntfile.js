@@ -16,9 +16,14 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
-      js: {
+      index: {
         files: {
           'built/index.min.js': ['js/index.js']
+        }
+      },
+      vendor: {
+        files: {
+          'built/vendor.min.js': ['bower_components/jquery/dist/jquery.min.js']
         }
       }
     },
