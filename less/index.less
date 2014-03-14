@@ -39,6 +39,15 @@ body {
         h5 {
           color: @text_color;
           text-transform: uppercase;
+
+          &:hover {
+            -webkit-transition: color 0.08s ease-in;
+            -moz-transition: color 0.08s ease-in;
+            -o-transition: color 0.08s ease-in;
+            -ms-transition: color 0.08s ease-in;
+            transition: color 0.08s ease-in;
+            color: @cyan;
+          }
         }
       }
     }
@@ -68,11 +77,11 @@ body {
 
       h2 {
         text-transform: uppercase;
-        color: @text_color;
+        color: @dark;
       }
 
       h4 {
-        color: @text_color;
+        color: @dark;
       }
     }
   }
