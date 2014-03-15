@@ -11,6 +11,38 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin: 0px;
   min-width: 1400px;
+  background-color: @dark;
+
+  /* for loading animation */
+  .content {
+    display: none;
+  }
+
+  .loading {
+    margin: 200px auto;
+    height: 150px;
+    width: 150px;
+
+    .stripe {
+      height: 100%;
+      width: 100%;
+      background-image: url('image/stripe_logo.png');
+      background-size: 150px;
+      background-repeat: no-repeat;
+
+      .logo {
+        height: 100%;
+        width: 0%;
+        background-image: url('image/logo.png');
+        background-size: 150px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .striped {
+
+    }
+  }
 
   header {
     background-color: @banner_color;
