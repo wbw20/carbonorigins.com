@@ -12,4 +12,4 @@ app.get('/', function(request, response) {
   response.render('index.ejs');
 });
 
-app.listen(80);
+app.listen(6969);
