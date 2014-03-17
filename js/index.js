@@ -3,7 +3,7 @@ $(document).ready(function() {
     if ($('video').get(0).buffered.length > 0) {
       var percent = 100 * ($('video').get(0).buffered.end(0) / $('video').get(0).duration);
 
-      percent /= 20/100; // only wait until video is 20% loaded
+      percent /= 15/100; // only wait until video is 15% loaded
 
       if (percent > 100) {
         $('video')[0].play();
@@ -18,5 +18,5 @@ $(document).ready(function() {
 
     setTimeout(function() {
       $('.buy').css('opacity', 1.0);
-    }, 3000);
+    }, 7000);
 });

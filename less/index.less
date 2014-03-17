@@ -36,11 +36,12 @@ body {
         background-image: url('image/logo.png');
         background-size: 150px;
         background-repeat: no-repeat;
+        -webkit-transition: width 0.14s ease-in;
+        -moz-transition: width 0.14s ease-in;
+        -o-transition: width 0.14s ease-in;
+        -ms-transition: width 0.14s ease-in;
+        transition: width 0.14s ease-in;
       }
-    }
-
-    .striped {
-
     }
   }
 
@@ -102,7 +103,7 @@ body {
     .buy {
       position: absolute;
       left: 13%;
-      top: 600px;
+      bottom: 5%;
       height: 300px;
       width: 450px;
       z-index: 1;
