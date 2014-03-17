@@ -8,9 +8,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
 }
 
+/* tablets */
+@media only screen and (min-device-width: 480px) {
+
+}
+
+/* tablets */
+@media only screen and (min-device-width: 768px) {
+  min-width: 600px;
+}
+
 body {
   margin: 0px;
-  min-width: 1400px;
+  /*min-width: 1400px;*/
   background-color: @dark;
 
   /* for loading animation */
@@ -94,10 +104,10 @@ body {
     video {
       position: absolute;
       top: 0px;
+      left: 0px;
       min-width: 100%;
       min-height: 100%;
       z-index: -1;
-      overflow: hidden;
     }
 
     .buy {
