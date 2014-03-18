@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('video').bind('progress', function() {
-    if($('video')[0].canPlayType && $('video')[0].canPlayType( 'video/mp4; codecs="mp4v.20.8"' )) {
+    $('.buy h2').html($('video')[0].canPlayType( 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ));
+    if($('video')[0].canPlayType && $('video')[0].canPlayType( 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' )) {
       if ($('video').get(0).buffered.length > 0) {
         var percent = 100 * ($('video').get(0).buffered.end(0) / $('video').get(0).duration);
 
