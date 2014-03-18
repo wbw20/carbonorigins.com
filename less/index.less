@@ -138,10 +138,20 @@ body {
         border: 1px solid #404041;
         border-radius: 5px;
         height: 50px;
-        width: 100px;
+        width: 250px;
+
+        &*:hover {
+          background-color: @dark;
+          cursor: pointer;
+
+          h2 {
+            color: @text_color;
+          }
+        }
 
         h2 {
-          margin: 10px auto;
+          margin: 10px 0px 0px 0px;
+          text-align: center;
         }
       }
     }
