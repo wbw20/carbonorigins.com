@@ -8,16 +8,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
 }
 
-/* tablets */
-@media only screen and (min-device-width: 480px) {
-
-}
-
-/* tablets */
-@media only screen and (min-device-width: 768px) {
-  min-width: 600px;
-}
-
 body {
   margin: 0px;
   /*min-width: 1400px;*/
@@ -26,33 +16,6 @@ body {
   /* for loading animation */
   .content {
     display: none;
-  }
-
-  .loading {
-    margin: 200px auto;
-    height: 150px;
-    width: 150px;
-
-    .stripe {
-      height: 100%;
-      width: 100%;
-      background-image: url('image/stripe_logo.png');
-      background-size: 150px;
-      background-repeat: no-repeat;
-
-      .logo {
-        height: 100%;
-        width: 0%;
-        background-image: url('image/logo.png');
-        background-size: 150px;
-        background-repeat: no-repeat;
-        -webkit-transition: width 0.14s ease-in;
-        -moz-transition: width 0.14s ease-in;
-        -o-transition: width 0.14s ease-in;
-        -ms-transition: width 0.14s ease-in;
-        transition: width 0.14s ease-in;
-      }
-    }
   }
 
   header {
@@ -137,10 +100,26 @@ body {
         border: 1px solid #404041;
         border-radius: 5px;
         height: 50px;
-        width: 100px;
+        width: 250px;
+        text-align: center;
+        text-transform: uppercase;
 
-        h2 {
-          margin: 10px auto;
+        &*:hover {
+          background-color: @dark;
+          cursor: pointer;
+
+          a > h2 {
+            color: @text_color;
+          }
+        }
+
+        a {
+          text-decoration: none;
+
+          h2 {
+            margin: 10px 0px 0px 0px;
+            text-align: center;
+          }
         }
       }
     }

@@ -11,7 +11,8 @@ module.exports = function(grunt) {
           cleancss: true,
         },
         files: {
-          "built/index.css": "less/index.less"
+          "built/desktop.css": "less/desktop.less",
+          "built/tablet.css": "less/tablet.less"
         }
       }
     },
