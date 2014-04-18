@@ -4,6 +4,10 @@ $(document).ready(function() {
   }
 
   setTimeout(function() {
+    $('.loading').css('opacity', 0.0);
+  }, 2400);
+
+  setTimeout(function() {
     $('.buy').css('opacity', 1.0);
   }, 3000);
 });
