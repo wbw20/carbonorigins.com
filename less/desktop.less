@@ -1,1 +1,23 @@
 @import "index";
+
+.loading {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: @dark;
+
+  .outline {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    background-image: url('image/outline_logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
