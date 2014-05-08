@@ -15,9 +15,17 @@ body {
   overflow: hidden;
   background-color: @dark;
 
-  header {
-    height: 75px;
-    z-index: 1;
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100%;
+
+    div {
+      float: left;
+    }
 
     .logo {
       background-image: url('image/logo.png');
@@ -25,43 +33,14 @@ body {
       background-repeat: no-repeat;
       height: 69px;
       width: 69px;
-      margin: 10px 0px 0px 10px;
+      margin: 16px 0px 0px 15px;
       float: left;
     }
 
-    .links {
-      float: right;
-
-      a {
-        margin-left: 0px auto;
-        float: left;
-        margin: 10px 20px;
-        text-decoration: none;
-
-        h5 {
-          color: @text_color;
-          text-transform: uppercase;
-
-          &:hover {
-            -webkit-transition: color 0.08s ease-in;
-            -moz-transition: color 0.08s ease-in;
-            -o-transition: color 0.08s ease-in;
-            -ms-transition: color 0.08s ease-in;
-            transition: color 0.08s ease-in;
-            color: @cyan;
-          }
-        }
-      }
+    .item {
+      height: 100px;
+      width: 100px;
     }
-  }
-
-  .sidebar {
-    background-color: red;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 50px;
-    height: 100%;
   }
 
   .container {

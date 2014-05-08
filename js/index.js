@@ -7,9 +7,9 @@ $(document).ready(function() {
   setTimeout(function() {
     $('video')[0].play();
     $('.loading').css('opacity', 0.0);
-  }, 5000);
+  }, 1000);
 
   setTimeout(function() {
     $('.buy').css('opacity', 1.0);
-  }, 6500);
+  }, 1500);
 });
