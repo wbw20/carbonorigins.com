@@ -7,6 +7,7 @@ $(document).ready(function() {
   setTimeout(function() {
     $('video')[0].play();
     $('.loading').css('opacity', 0.0);
+    $('.loading').css('z-index', -1.0);
   }, 1000);
 
   setTimeout(function() {

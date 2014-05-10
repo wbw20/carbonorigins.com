@@ -12,4 +12,12 @@ app.get('/', function(request, response) {
   response.render('index.ejs');
 });
 
+app.get('/aerospace', function(request, response) {
+  response.render('aerospace/aerospace.ejs');
+});
+
+app.get('/apollo', function(request, response) {
+  response.render('apollo/apollo.ejs');
+});
+
 app.listen(6969);
