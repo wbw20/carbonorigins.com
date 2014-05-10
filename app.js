@@ -9,6 +9,7 @@ app.set('view engine', 'html');
 app.use(express.static(__dirname + '/built'));
 
 app.get('/', function(request, response) {
+  console.log(request.headers);
   response.render('index.ejs');
 });
 
