@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         tasks: ['uglify']
       },
       less: {
-        files: ['less/*.less'],
+        files: ['less/**/*.less'],
         tasks: ['less']
       },
       copy: {
