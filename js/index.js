@@ -2,7 +2,7 @@ $(document).ready(function() {
   if (window.location.href.indexOf("#") == -1) {
     $('video')[0].pause();
     $('.loading').css('opacity', 1.0);
-    $('.loading').css('z-index', 1.0);
+    $('.loading').css('z-index', 2.0);
 
     $('.loading').css('-webkit-transition', 'opacity 0.3s ease-in;');
     $('.loading').css('-moz-transition', 'opacity 0.3s ease-in;');
