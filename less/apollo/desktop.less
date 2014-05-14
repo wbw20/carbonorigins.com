@@ -16,7 +16,6 @@
     .description {
       width: 400px;
       text-align: center;
-      background-color: red;
 
       h1 {
         color: @text_color;
@@ -34,6 +33,35 @@
             float: left;
             border: 1px solid @text_color;
             border-radius: 5px;
+          }
+        }
+      }
+
+      .button {
+        height: 50px;
+        width: 250px;
+        border: 1px solid @cyan;
+        border-radius: 5px;
+        margin: 50px auto 0px auto;
+        text-align: center;
+        text-transform: uppercase;
+
+        &*:hover {
+          background-color: @cyan;
+          cursor: pointer;
+
+          a > h2 {
+            color: @cyan;
+          }
+        }
+
+        a {
+          text-decoration: none;
+
+          h2 {
+            color: @cyan;
+            margin: 10px 0px 0px 0px;
+            text-align: center;
           }
         }
       }
