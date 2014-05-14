@@ -15,11 +15,28 @@
 
     .description {
       width: 300px;
+      height: 400px;
       text-align: center;
       background-color: red;
 
-      h3 {
+      h1 {
+        color: @text_color;
+      }
 
+      table {
+        margin: 0px auto;
+
+        td {
+          padding: 10px;
+
+          .feature {
+            height: 100px;
+            width: 100px;
+            float: left;
+            border: 1px solid @text_color;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }
