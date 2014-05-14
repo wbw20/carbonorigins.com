@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       vendor_js: {
         src: ['bower_components/jquery/dist/jquery.js',
-              'client/app/bower_components/animo.js/animo.js'],
+              'bower_components/animo.js/animo.js'],
         dest: 'built/js/vendor.js'
       },
       vendor_css: {
