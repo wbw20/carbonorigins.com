@@ -2,8 +2,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.initConfig({
+    concat: {
+      index_js: {
+        src: ['js/**/*.js'],
+        dest: 'built/js/index.js'
+      },
+      vendor_js: {
+        src: ['bower_components/jquery/dist/jquery.js',
+              'client/app/bower_components/animo.js/animo.js'],
+        dest: 'built/js/vendor.js'
+      },
+      vendor_css: {
+        src: ['/bower_components/animo.js/animate+animo.css'],
+        dest: 'built/css/vendor.css'
+      }
+    },
     less: {
       production: {
         options: {
@@ -11,20 +26,8 @@ module.exports = function(grunt) {
           cleancss: true,
         },
         files: {
-          "built/desktop.css": "less/desktop.less",
-          "built/tablet.css": "less/tablet.less"
-        }
-      }
-    },
-    uglify: {
-      index: {
-        files: {
-          'built/index.min.js': ['js/index.js']
-        }
-      },
-      vendor: {
-        files: {
-          'built/vendor.min.js': ['bower_components/jquery/dist/jquery.min.js']
+          "built/css/desktop.css": "less/desktop.less",
+          "built/css/tablet.css": "less/tablet.less"
         }
       }
     },
@@ -39,9 +42,9 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      uglify: {
+      concat: {
         files: ['js/*.js'],
-        tasks: ['uglify']
+        tasks: ['concat']
       },
       less: {
         files: ['less/**/*.less'],
@@ -54,5 +57,5 @@ module.exports = function(grunt) {
     },
   });
 
-  grunt.registerTask('default', ['less', 'uglify', 'copy']);
+  grunt.registerTask('default', ['less', 'concat', 'copy']);
 };

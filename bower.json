@@ -6,7 +6,8 @@
     "William B. Wettersten <wbw20@case.edu>"
   ],
   "dependencies": {
-    "jquery": "latest"
+    "jquery": "latest",
+    "animo.js": "latest"
   },
   "description": "The retail website for Carbon Origins",
   "main": "app.js",
