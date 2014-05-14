@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         dest: 'built/js/vendor.js'
       },
       vendor_css: {
-        src: ['/bower_components/animo.js/animate+animo.css'],
+        src: ['bower_components/animo.js/animate+animo.css'],
         dest: 'built/css/vendor.css'
       }
     },
