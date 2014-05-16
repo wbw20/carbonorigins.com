@@ -22,20 +22,26 @@
 
   .top {
     float: left;
+    margin-top: 40px;
 
     .item {
-      height: 100px;  
-      width: 100px;
+      height: 70px;  
+      width: 70px;
+      margin: 15px;
     }
 
     .aerospace {
       background-image: url('../image/logo/rocket.png');
-      background-size: 100px;
+      background-size: 70px;
     }
 
     .apollo {
       background-image: url('../image/logo/apollo.png');
-      background-size: 100px;
+      background-size: 70px;
+
+      &:hover {
+        background-image: url('../image/logo/apollo_highlighted.png');
+      }
     }
   }
 
