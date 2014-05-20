@@ -1,84 +1,110 @@
 .apollo {
   width: 100%;
 
-  section#stats {
-    width: 800px;
-    margin: 50px auto 0px auto;
+  section#apollo {
+    width: 100%;
+    height: 1000px;
+    background-color: @dark;
 
-    .close-up {
-      height: 800px;
-      width: 400px;
-      background-image: url('../image/apollo.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
+    >div {
+      width: 800px;
+      margin: 0px auto;
+
+      .side {
+        background-image: url('../image/apollo_side.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 600px;
+        width: 800px;
+      }
     }
+  }
 
-    .description {
-      width: 400px;
-      text-align: center;
+  section#stats {
+    div.container {
+      width: 100%;
+      overflow: auto;
 
-      .info {
-        .apollo_text {
-          height: 125px;
+      >div {
+        width: 800px;
+        margin: 50px auto 0px auto;
+
+        .close-up {
+          height: 800px;
           width: 400px;
-          background-image: url('../image/logo/apollo_text.png');
+          background-image: url('../image/apollo.png');
           background-repeat: no-repeat;
           background-size: 100%;
         }
 
-        table {
-          margin: 0px auto;
-
-          td {
-            padding: 10px;
-
-            .feature {
-              height: 150px;
-              width: 150px;
-              float: left;
-              border: 1px solid @text_color;
-              border-radius: 5px;
-            }
-          }
-        }
-
-        .button {
-          height: 50px;
-          width: 250px;
-          border: 1px solid @cyan;
-          border-radius: 5px;
-          margin: 50px auto 0px auto;
+        .description {
+          width: 400px;
           text-align: center;
-          text-transform: uppercase;
 
-          &*:hover {
-            background-color: @cyan;
-            cursor: pointer;
+          .info {
+            .apollo_text {
+              height: 125px;
+              width: 400px;
+              background-image: url('../image/logo/apollo_text.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+            }
 
-            a > h2 {
-              color: @text_color;
+            table {
+              margin: 0px auto;
+
+              td {
+                padding: 10px;
+
+                .feature {
+                  height: 150px;
+                  width: 150px;
+                  float: left;
+                  border: 1px solid @text_color;
+                  border-radius: 5px;
+                }
+              }
+            }
+
+            .button {
+              height: 50px;
+              width: 250px;
+              border: 1px solid @cyan;
+              border-radius: 5px;
+              margin: 50px auto 0px auto;
+              text-align: center;
+              text-transform: uppercase;
+
+              &*:hover {
+                background-color: @cyan;
+                cursor: pointer;
+
+                a > h2 {
+                  color: @text_color;
+                }
+              }
+
+              a {
+                text-decoration: none;
+
+                h2 {
+                  color: @cyan;
+                  margin: 10px 0px 0px 0px;
+                  text-align: center;
+                }
+              }
             }
           }
 
-          a {
-            text-decoration: none;
-
-            h2 {
-              color: @cyan;
-              margin: 10px 0px 0px 0px;
-              text-align: center;
-            }
+          .preorder {
+            display: none;
           }
         }
-      }
 
-      .preorder {
-        display: none;
+        >div {
+          float: left;
+        }
       }
-    }
-
-    >div {
-      float: left;
     }
   }
 }
