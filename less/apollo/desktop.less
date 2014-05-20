@@ -12,12 +12,61 @@
       width: 800px;
       margin: 0px auto;
 
+      .billboard {
+        height: 200px;
+        text-align: center;
+
+        h1 {
+          color: @text_color;
+          font-size: 52;
+        }
+
+        h4 {
+          color: @text_color;
+        }
+      }
+
       .side {
         background-image: url('../image/apollo_side.png');
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 600px;
-        width: 800px;
+        margin: 0px auto;
+        height: 250px;
+        width: 600px;
+      }
+
+      .conventions {
+        height: 125px;
+        width: 400px;
+        margin: 0px auto;
+        padding-right: 15px;
+
+        >div {
+          float: left;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+
+        .makercon {
+          height: 100px;
+          width: 100px;
+          margin: 15px;
+          background-image: url('../image/conventions/maker_con.png');
+        }
+
+        .makerfaire {
+          height: 85px;
+          width: 85px;
+          margin: 20px 15px 15px 15px;
+          background-image: url('../image/conventions/maker_faire.png');
+        }
+
+        .ces {
+          height: 100px;
+          width: 100px;
+          margin: 20px 15px 15px 25px;
+          background-image: url('../image/conventions/ces.png');
+        }
       }
     }
   }
