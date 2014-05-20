@@ -5,7 +5,7 @@
 
   section#apollo {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: @dark;
 
     >div {
@@ -79,77 +79,14 @@
       >div {
         width: 800px;
         margin: 50px auto 0px auto;
+        border-top: 1px solid @light_gray;
 
-        .close-up {
+        .sensors {
           height: 800px;
-          width: 400px;
-          background-image: url('../image/apollo.png');
+          width: 800px;
+          background-image: url('../image/sensors.png');
           background-repeat: no-repeat;
           background-size: 100%;
-        }
-
-        .description {
-          width: 400px;
-          text-align: center;
-
-          .info {
-            .apollo_text {
-              height: 125px;
-              width: 400px;
-              background-image: url('../image/logo/apollo_text.png');
-              background-repeat: no-repeat;
-              background-size: 100%;
-            }
-
-            table {
-              margin: 0px auto;
-
-              td {
-                padding: 10px;
-
-                .feature {
-                  height: 150px;
-                  width: 150px;
-                  float: left;
-                  border: 1px solid @text_color;
-                  border-radius: 5px;
-                }
-              }
-            }
-
-            .button {
-              height: 50px;
-              width: 250px;
-              border: 1px solid @cyan;
-              border-radius: 5px;
-              margin: 50px auto 0px auto;
-              text-align: center;
-              text-transform: uppercase;
-
-              &*:hover {
-                background-color: @cyan;
-                cursor: pointer;
-
-                a > h2 {
-                  color: @text_color;
-                }
-              }
-
-              a {
-                text-decoration: none;
-
-                h2 {
-                  color: @cyan;
-                  margin: 10px 0px 0px 0px;
-                  text-align: center;
-                }
-              }
-            }
-          }
-
-          .preorder {
-            display: none;
-          }
         }
 
         >div {
