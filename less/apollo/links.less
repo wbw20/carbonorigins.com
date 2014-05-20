@@ -32,10 +32,10 @@
       }
 
       a {
-        color: @text_color;
         text-decoration: none;
 
         h5 {
+          color: @text_color;
           margin-top: 2px;
         }
       }
@@ -49,6 +49,10 @@
       a {
         color: @text_color;
         text-decoration: none;
+
+        &:hover {
+          color: @text_highlight;
+        }
       }
     }
   }
