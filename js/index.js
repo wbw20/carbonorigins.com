@@ -20,9 +20,9 @@ $(document).ready(function() {
       $('.loading').css('z-index', -1.0);
       window.location.href += "#";
     }, 1000);
-
-    setTimeout(function() {
-      $('.buy').css('opacity', 1.0);
-    }, 1500);
   }
+
+  setTimeout(function() {
+    $('.buy').css('opacity', 1.0);
+  }, 1500);
 });
