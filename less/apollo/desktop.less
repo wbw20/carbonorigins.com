@@ -95,4 +95,57 @@
       }
     }
   }
+
+  section#communication {
+    div.container {
+      width: 100%;
+      overflow: auto;
+
+      .communication {
+        width: 800px;
+        margin: 0px auto;
+        border-top: 1px solid @light_gray;
+
+        >div {
+          height: 200px;
+          width: 266px;
+          float: left;
+          margin-bottom: 100px;
+
+          >div {
+            height: 75px;
+            width: 150px;
+            margin: 0px auto;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+
+          .microsd {
+            background-image: url('../image/communication/microsd.png');
+          }
+
+          .bluetooth {
+            background-image: url('../image/communication/bluetooth.png');
+          }
+
+          .wifi {
+            background-image: url('../image/communication/wifi.png');
+          }
+
+          p {
+            color: @text_color;
+            font-weight: 300;
+            text-align: justify;
+            width: 200px;
+            margin: 0px auto;
+          }
+        }
+
+        >div:not(:first-child):not(:last-child) {
+          border-left: 1px solid @light_gray;
+          border-right: 1px solid @light_gray;
+        }
+      }
+    }
+  }
 }
