@@ -16,64 +16,90 @@
       height: 700px;
 
       >div {
-        width: 800px;
-        margin: 0px auto;
-
-        .billboard {
-          margin-top: 50px;
-          height: 200px;
-          text-align: center;
-
-          h1 {
-            color: @text_color;
-            font-size: 52;
-          }
-
-          h4 {
-            color: @text_color;
-          }
-        }
-
-        .side {
-          background-image: url('../image/apollo_side.png');
-          background-repeat: no-repeat;
-          background-size: 100%;
+        .photo {
+          width: 800px;
           margin: 0px auto;
-          height: 250px;
-          width: 600px;
+
+          .billboard {
+            margin-top: 50px;
+            height: 200px;
+            text-align: center;
+
+            h1 {
+              color: @text_color;
+              font-size: 52;
+            }
+
+            h4 {
+              color: @text_color;
+            }
+          }
+
+          .side {
+            background-image: url('../image/apollo_side.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0px auto;
+            height: 250px;
+            width: 600px;
+          }
         }
 
         .conventions {
           height: 125px;
-          width: 400px;
-          margin: 0px auto;
-          padding-right: 15px;
+          background-size: 10%;
+          background-image: url('../image/background/fiber.png');
+          border-top: 1px solid @medium_light_gray;
+          border-bottom: 1px solid @medium_light_gray;
 
-          >div {
-            float: left;
-            background-repeat: no-repeat;
-            background-size: 100%;
-          }
+          .shadeup {
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(top, @clear , @black_clearer); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom, @clear, @black_clearer); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom, @clear, @black_clearer); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, @clear , @black_clearer); /* Standard syntax */
 
-          .makercon {
-            height: 100px;
-            width: 100px;
-            margin: 15px;
-            background-image: url('../image/conventions/maker_con.png');
-          }
+            .shadedown {
+              width: 100%;
+              height: 100%;
+              background: -webkit-linear-gradient(bottom, @clear , @black_clear); /* For Safari 5.1 to 6.0 */
+              background: -o-linear-gradient(top, @clear, @black_clear); /* For Opera 11.1 to 12.0 */
+              background: -moz-linear-gradient(top, @clear, @black_clear); /* For Firefox 3.6 to 15 */
+              background: linear-gradient(to top, @clear , @black_clear); /* Standard syntax */
 
-          .makerfaire {
-            height: 85px;
-            width: 85px;
-            margin: 20px 15px 15px 15px;
-            background-image: url('../image/conventions/maker_faire.png');
-          }
+              >div {
+                width: 400px;
+                margin: 0px auto;
 
-          .ces {
-            height: 100px;
-            width: 100px;
-            margin: 20px 15px 15px 25px;
-            background-image: url('../image/conventions/ces.png');
+                >div {
+                  float: left;
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                }
+
+                .makercon {
+                  height: 100px;
+                  width: 100px;
+                  margin: 15px;
+                  background-image: url('../image/conventions/maker_con.png');
+                }
+
+                .makerfaire {
+                  height: 85px;
+                  width: 85px;
+                  margin: 20px 15px 15px 15px;
+                  background-image: url('../image/conventions/maker_faire.png');
+                }
+
+                .ces {
+                  height: 100px;
+                  width: 100px;
+                  margin: 20px 15px 15px 25px;
+                  background-image: url('../image/conventions/ces.png');
+                }
+              }
+            }
           }
         }
       }
