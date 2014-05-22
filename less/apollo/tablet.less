@@ -1,117 +1,119 @@
 /*@import "links";*/
 
 /* no links for mobile */
-.links {
-  display: none;
-}
+.content {
+  .links {
+    display: none;
+  }
 
-.apollo {
-  width: 100%;
-
-  section#apollo {
+  .apollo {
     width: 100%;
-    height: 400px;
-    background-color: @dark;
 
-    >div {
-      width: 800px;
-      margin: 0px auto;
-
-      .billboard {
-        height: 100px;
-        text-align: center;
-        color: @text_color;
-        margin: 150px auto 0px auto;
-      }
-
-      .side {
-        background-image: url('../image/apollo_side.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        margin: 0px auto;
-        height: 150px;
-        width: 300px;
-      }
-
-      .conventions {
-        height: 125px;
-        width: 400px;
-        margin: 0px auto;
-        padding-right: 15px;
-
-        >div {
-          float: left;
-          background-repeat: no-repeat;
-          background-size: 100%;
-        }
-
-        .makercon {
-          height: 100px;
-          width: 100px;
-          margin: 15px;
-          background-image: url('../image/conventions/maker_con.png');
-        }
-
-        .makerfaire {
-          height: 85px;
-          width: 85px;
-          margin: 20px 15px 15px 15px;
-          background-image: url('../image/conventions/maker_faire.png');
-        }
-
-        .ces {
-          height: 100px;
-          width: 100px;
-          margin: 20px 15px 15px 25px;
-          background-image: url('../image/conventions/ces.png');
-        }
-      }
-    }
-  }
-
-  section#stats {
-    display: none;
-  }
-
-  section#communication {
-    display: none;
-  }
-
-  section#preorder {
-    div.container {
+    section#apollo {
       width: 100%;
-      overflow: auto;
-      background-image: none;
+      height: 400px;
+      background-color: @dark;
 
       >div {
         width: 800px;
-        height: 600px;
-        margin: 50px auto 0px auto;
-        border-top: 1px solid @light_gray;
+        margin: 0px auto;
 
-        h1, h5 {
+        .billboard {
+          height: 100px;
           text-align: center;
           color: @text_color;
+          margin: 150px auto 0px auto;
         }
 
-        .sensors {
-          height: 800px;
-          width: 800px;
-          background-image: url('../image/sensors.png');
+        .side {
+          background-image: url('../image/apollo_side.png');
           background-repeat: no-repeat;
           background-size: 100%;
+          margin: 0px auto;
+          height: 150px;
+          width: 300px;
         }
+
+        .conventions {
+          height: 125px;
+          width: 400px;
+          margin: 0px auto;
+          padding-right: 15px;
+
+          >div {
+            float: left;
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+
+          .makercon {
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+            background-image: url('../image/conventions/maker_con.png');
+          }
+
+          .makerfaire {
+            height: 85px;
+            width: 85px;
+            margin: 20px 15px 15px 15px;
+            background-image: url('../image/conventions/maker_faire.png');
+          }
+
+          .ces {
+            height: 100px;
+            width: 100px;
+            margin: 20px 15px 15px 25px;
+            background-image: url('../image/conventions/ces.png');
+          }
+        }
+      }
+    }
+
+    section#stats {
+      display: none;
+    }
+
+    section#communication {
+      display: none;
+    }
+
+    section#preorder {
+      div.container {
+        width: 100%;
+        overflow: auto;
+        background-image: none;
 
         >div {
-          float: left;
-        }
+          width: 800px;
+          height: 600px;
+          margin: 50px auto 0px auto;
+          border-top: 1px solid @light_gray;
 
-        .preorder {
-          width: 400px;
-          margin: 50px 200px;
-
-          label {
+          h1, h5 {
+            text-align: center;
             color: @text_color;
+          }
+
+          .sensors {
+            height: 800px;
+            width: 800px;
+            background-image: url('../image/sensors.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+
+          >div {
+            float: left;
+          }
+
+          .preorder {
+            width: 400px;
+            margin: 50px 200px;
+
+            label {
+              color: @text_color;
+            }
           }
         }
       }
