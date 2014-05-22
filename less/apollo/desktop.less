@@ -46,7 +46,7 @@
         }
 
         .conventions {
-          height: 125px;
+          height: 150px;
           background-size: 10%;
           background-image: url('../image/background/fiber.png');
           border-top: 1px solid @medium_light_gray;
@@ -55,22 +55,23 @@
           .shadeup {
             width: 100%;
             height: 100%;
-            background: -webkit-linear-gradient(top, @clear , @black_clearer); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(bottom, @clear, @black_clearer); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(bottom, @clear, @black_clearer); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to bottom, @clear , @black_clearer); /* Standard syntax */
+            background: -webkit-linear-gradient(top, @clear , @gray_clearer); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom, @clear, @gray_clearer); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom, @clear, @gray_clearer); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, @clear , @gray_clearer); /* Standard syntax */
 
             .shadedown {
               width: 100%;
               height: 100%;
-              background: -webkit-linear-gradient(bottom, @clear , @black_clear); /* For Safari 5.1 to 6.0 */
-              background: -o-linear-gradient(top, @clear, @black_clear); /* For Opera 11.1 to 12.0 */
-              background: -moz-linear-gradient(top, @clear, @black_clear); /* For Firefox 3.6 to 15 */
-              background: linear-gradient(to top, @clear , @black_clear); /* Standard syntax */
+              background: -webkit-linear-gradient(bottom, @clear , @gray_clear); /* For Safari 5.1 to 6.0 */
+              background: -o-linear-gradient(top, @clear, @gray_clear); /* For Opera 11.1 to 12.0 */
+              background: -moz-linear-gradient(top, @clear, @gray_clear); /* For Firefox 3.6 to 15 */
+              background: linear-gradient(to top, @clear , @gray_clear); /* Standard syntax */
 
               >div {
                 width: 400px;
                 margin: 0px auto;
+                padding-top: 10px;
 
                 >div {
                   float: left;
