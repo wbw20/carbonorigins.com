@@ -5,101 +5,114 @@
   width: 1100px;
   margin: 0px auto;
 
-  section#apollo {
-    width: 100%;
+  .apollo {
+    section#apollo {
+      width: 100%;
 
-    >div {
-      .photo {
-        width: 800px;
-        margin: 0px auto;
-
-        .billboard {
-          margin-top: 50px;
-          height: 200px;
-          text-align: center;
-
-          h1 {
-            color: @text_color;
-            font-size: 52;
-          }
-
-          h4 {
-            color: @text_color;
-          }
-        }
-
-        .side {
-          background-image: url('../image/apollo_side.png');
-          background-repeat: no-repeat;
-          background-size: 100%;
+      >div {
+        .photo {
+          width: 800px;
           margin: 0px auto;
-          height: 250px;
-          width: 600px;
+
+          .billboard {
+            margin-top: 50px;
+            height: 200px;
+            text-align: center;
+
+            h1 {
+              color: @text_color;
+              font-size: 52;
+            }
+
+            h4 {
+              color: @text_color;
+            }
+          }
+
+          .side {
+            background-image: url('../image/apollo_side.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0px auto;
+            height: 250px;
+            width: 600px;
+          }
         }
-      }
 
-      .conventions {
-        height: 200px;
-        background-size: 10%;
-        background-image: url('../image/background/fiber.png');
-        border-top: 1px solid @medium_light_gray;
-        border-bottom: 1px solid @medium_light_gray;
+        .conventions {
+          height: 200px;
+          background-size: 10%;
+          background-image: url('../image/background/fiber.png');
+          border-top: 1px solid @medium_light_gray;
+          border-bottom: 1px solid @medium_light_gray;
 
-        .shadeup {
-          width: 100%;
-          height: 100%;
-          background: -webkit-linear-gradient(top, @clear , @gray_clearer); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(bottom, @clear, @gray_clearer); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(bottom, @clear, @gray_clearer); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(to bottom, @clear , @gray_clearer); /* Standard syntax */
-
-          .shadedown {
+          .shadeup {
             width: 100%;
             height: 100%;
-            background: -webkit-linear-gradient(bottom, @clear , @gray_clear); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(top, @clear, @gray_clear); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(top, @clear, @gray_clear); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to top, @clear , @gray_clear); /* Standard syntax */
+            background: -webkit-linear-gradient(top, @clear , @gray_clearer); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom, @clear, @gray_clearer); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom, @clear, @gray_clearer); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, @clear , @gray_clearer); /* Standard syntax */
 
-            >div {
-              width: 400px;
-              margin: 0px auto;
-              text-align: center;
-              padding-top: 10px;
-              color: @text_color;
-              text-transform: uppercase;
-
-              h5 {
-                margin-right: 23px;
-              }
+            .shadedown {
+              width: 100%;
+              height: 100%;
+              background: -webkit-linear-gradient(bottom, @clear , @gray_clear); /* For Safari 5.1 to 6.0 */
+              background: -o-linear-gradient(top, @clear, @gray_clear); /* For Opera 11.1 to 12.0 */
+              background: -moz-linear-gradient(top, @clear, @gray_clear); /* For Firefox 3.6 to 15 */
+              background: linear-gradient(to top, @clear , @gray_clear); /* Standard syntax */
 
               >div {
-                float: left;
-                background-repeat: no-repeat;
-                background-size: 100%;
-              }
+                width: 400px;
+                margin: 0px auto;
+                text-align: center;
+                padding-top: 10px;
+                color: @text_color;
+                text-transform: uppercase;
 
-              .makercon {
-                height: 100px;
-                width: 100px;
-                margin: 15px;
-                background-image: url('../image/conventions/maker_con.png');
-              }
+                h5 {
+                  margin-right: 23px;
+                }
 
-              .makerfaire {
-                height: 85px;
-                width: 85px;
-                margin: 20px 15px 15px 15px;
-                background-image: url('../image/conventions/maker_faire.png');
-              }
+                >div {
+                  float: left;
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                }
 
-              .ces {
-                height: 100px;
-                width: 100px;
-                margin: 20px 15px 15px 25px;
-                background-image: url('../image/conventions/ces.png');
+                .makercon {
+                  height: 100px;
+                  width: 100px;
+                  margin: 15px;
+                  background-image: url('../image/conventions/maker_con.png');
+                }
+
+                .makerfaire {
+                  height: 85px;
+                  width: 85px;
+                  margin: 20px 15px 15px 15px;
+                  background-image: url('../image/conventions/maker_faire.png');
+                }
+
+                .ces {
+                  height: 100px;
+                  width: 100px;
+                  margin: 20px 15px 15px 25px;
+                  background-image: url('../image/conventions/ces.png');
+                }
               }
             }
+          }
+        }
+      }
+    }
+
+    section#sensors {
+      div.container {
+        >div {
+          .sensors {
+            height: 800px;
+            width: 800px;
           }
         }
       }
