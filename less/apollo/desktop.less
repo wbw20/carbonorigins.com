@@ -1,214 +1,107 @@
+@import "common";
 @import "links";
 
 .content {
   width: 1100px;
   margin: 0px auto;
-  background-color: @dark;
-  -webkit-box-shadow: 0 0 6px @black;
-  -moz-box-shadow: 0 0 6px @black;
-  box-shadow: 0 0 6px @black;
 
-  .apollo {
+  section#apollo {
     width: 100%;
 
-    section#apollo {
-      width: 100%;
+    >div {
+      .photo {
+        width: 800px;
+        margin: 0px auto;
 
-      >div {
-        .photo {
-          width: 800px;
-          margin: 0px auto;
+        .billboard {
+          margin-top: 50px;
+          height: 200px;
+          text-align: center;
 
-          .billboard {
-            margin-top: 50px;
-            height: 200px;
-            text-align: center;
-
-            h1 {
-              color: @text_color;
-              font-size: 52;
-            }
-
-            h4 {
-              color: @text_color;
-            }
+          h1 {
+            color: @text_color;
+            font-size: 52;
           }
 
-          .side {
-            background-image: url('../image/apollo_side.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            margin: 0px auto;
-            height: 250px;
-            width: 600px;
+          h4 {
+            color: @text_color;
           }
         }
 
-        .conventions {
-          height: 200px;
-          background-size: 10%;
-          background-image: url('../image/background/fiber.png');
-          border-top: 1px solid @medium_light_gray;
-          border-bottom: 1px solid @medium_light_gray;
+        .side {
+          background-image: url('../image/apollo_side.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          margin: 0px auto;
+          height: 250px;
+          width: 600px;
+        }
+      }
 
-          .shadeup {
+      .conventions {
+        height: 200px;
+        background-size: 10%;
+        background-image: url('../image/background/fiber.png');
+        border-top: 1px solid @medium_light_gray;
+        border-bottom: 1px solid @medium_light_gray;
+
+        .shadeup {
+          width: 100%;
+          height: 100%;
+          background: -webkit-linear-gradient(top, @clear , @gray_clearer); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(bottom, @clear, @gray_clearer); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(bottom, @clear, @gray_clearer); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(to bottom, @clear , @gray_clearer); /* Standard syntax */
+
+          .shadedown {
             width: 100%;
             height: 100%;
-            background: -webkit-linear-gradient(top, @clear , @gray_clearer); /* For Safari 5.1 to 6.0 */
-            background: -o-linear-gradient(bottom, @clear, @gray_clearer); /* For Opera 11.1 to 12.0 */
-            background: -moz-linear-gradient(bottom, @clear, @gray_clearer); /* For Firefox 3.6 to 15 */
-            background: linear-gradient(to bottom, @clear , @gray_clearer); /* Standard syntax */
+            background: -webkit-linear-gradient(bottom, @clear , @gray_clear); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top, @clear, @gray_clear); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top, @clear, @gray_clear); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top, @clear , @gray_clear); /* Standard syntax */
 
-            .shadedown {
-              width: 100%;
-              height: 100%;
-              background: -webkit-linear-gradient(bottom, @clear , @gray_clear); /* For Safari 5.1 to 6.0 */
-              background: -o-linear-gradient(top, @clear, @gray_clear); /* For Opera 11.1 to 12.0 */
-              background: -moz-linear-gradient(top, @clear, @gray_clear); /* For Firefox 3.6 to 15 */
-              background: linear-gradient(to top, @clear , @gray_clear); /* Standard syntax */
+            >div {
+              width: 400px;
+              margin: 0px auto;
+              text-align: center;
+              padding-top: 10px;
+              color: @text_color;
+              text-transform: uppercase;
+
+              h5 {
+                margin-right: 23px;
+              }
 
               >div {
-                width: 400px;
-                margin: 0px auto;
-                text-align: center;
-                padding-top: 10px;
-                color: @text_color;
-                text-transform: uppercase;
+                float: left;
+                background-repeat: no-repeat;
+                background-size: 100%;
+              }
 
-                h5 {
-                  margin-right: 23px;
-                }
+              .makercon {
+                height: 100px;
+                width: 100px;
+                margin: 15px;
+                background-image: url('../image/conventions/maker_con.png');
+              }
 
-                >div {
-                  float: left;
-                  background-repeat: no-repeat;
-                  background-size: 100%;
-                }
+              .makerfaire {
+                height: 85px;
+                width: 85px;
+                margin: 20px 15px 15px 15px;
+                background-image: url('../image/conventions/maker_faire.png');
+              }
 
-                .makercon {
-                  height: 100px;
-                  width: 100px;
-                  margin: 15px;
-                  background-image: url('../image/conventions/maker_con.png');
-                }
-
-                .makerfaire {
-                  height: 85px;
-                  width: 85px;
-                  margin: 20px 15px 15px 15px;
-                  background-image: url('../image/conventions/maker_faire.png');
-                }
-
-                .ces {
-                  height: 100px;
-                  width: 100px;
-                  margin: 20px 15px 15px 25px;
-                  background-image: url('../image/conventions/ces.png');
-                }
+              .ces {
+                height: 100px;
+                width: 100px;
+                margin: 20px 15px 15px 25px;
+                background-image: url('../image/conventions/ces.png');
               }
             }
           }
         }
-      }
-    }
-
-    section {
-      padding-top: 40px;
-
-      >h1, >h5 {
-        text-align: center;
-        color: @text_color;
-      }
-
-      >h1 {
-        font-weight: 300;
-        letter-spacing: 2px;
-      }
-    }
-
-    section#sensors {
-      div.container {
-        width: 100%;
-        overflow: auto;
-
-        >div {
-          width: 800px;
-          margin: 50px auto 0px auto;
-          border-top: 1px solid @light_gray;
-
-          .sensors {
-            height: 800px;
-            width: 800px;
-            background-image: url('../image/sensors.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-          }
-
-          >div {
-            float: left;
-          }
-        }
-      }
-    }
-
-    section#communication {
-      div.container {
-        width: 100%;
-        overflow: auto;
-
-        .communication {
-          width: 800px;
-          margin: 50px auto 0px auto;
-          border-top: 1px solid @light_gray;
-
-          >div {
-            height: 200px;
-            width: 266px;
-            float: left;
-
-            >div {
-              height: 100px;
-              width: 175px;
-              margin: 0px auto;
-              background-repeat: no-repeat;
-              background-size: 100%;
-            }
-
-            .microsd {
-              background-image: url('../image/communication/microsd.png');
-            }
-
-            .bluetooth {
-              background-image: url('../image/communication/bluetooth.png');
-            }
-
-            .wifi {
-              background-image: url('../image/communication/wifi.png');
-            }
-
-            p {
-              color: @text_color;
-              font-weight: 300;
-              text-align: justify;
-              width: 200px;
-              margin: 0px auto;
-            }
-          }
-
-          >div:not(:first-child):not(:last-child) {
-            border-left: 1px solid @light_gray;
-            border-right: 1px solid @light_gray;
-          }
-        }
-      }
-    }
-
-    section#preorder {
-      div.container {
-        width: 100%;
-        overflow: auto;
-
-        @import "preorder";
       }
     }
   }
