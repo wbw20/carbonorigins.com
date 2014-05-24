@@ -22,32 +22,29 @@
     }
 
     section#sensors {
-      div.container {
-        width: 100%;
-        overflow: auto;
+      overflow: auto;
+
+      div.content_container {
+        margin-top: 50px;
+
+        .sensors {
+          margin-top: 50px;
+          height: 800px;
+          width: 800px;
+          border-top: 1px solid @light_gray;
+          background-image: url('../image/sensors.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
 
         >div {
-          width: 800px;
-          margin: 50px auto 0px auto;
-          border-top: 1px solid @light_gray;
-
-          .sensors {
-            height: 800px;
-            width: 800px;
-            background-image: url('../image/sensors.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-          }
-
-          >div {
-            float: left;
-          }
+          float: left;
         }
       }
     }
 
     section#communication {
-      div.container {
+      div.content_container {
         width: 100%;
         overflow: auto;
 
@@ -99,7 +96,7 @@
     }
 
     section#preorder {
-      div.container {
+      div.content_container {
         width: 100%;
         overflow: auto;
 
