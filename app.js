@@ -1,5 +1,8 @@
 var express = require('express'),
-    ejs = require('ejs');
+    http = require('http'),
+    https = require('https'),
+    ejs = require('ejs'),
+    fs = require('fs');
 
 var app = express();
 app.engine('.html', require('ejs').__express);
@@ -20,4 +23,12 @@ app.get('/apollo', function(request, response) {
   response.render('apollo/apollo.ejs');
 });
 
-app.listen(6969);
+https.createServer({
+  key: fs.readFileSync('./test/fixtures/server.key'),
+  cert: fs.readFileSync('./test/fixtures/server.crt'),
+  ca: fs.readFileSync('./test/fixtures/ca.crt'),
+  requestCert: true
+}, app).listen(443);
+
+http.createServer(app).listen(6969);
+
