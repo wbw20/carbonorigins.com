@@ -1,26 +1,28 @@
-.button {
-  border: 1px solid #404041;
-  border-radius: 5px;
-  height: 50px;
-  width: 300px;
-  text-align: center;
-  text-transform: uppercase;
+@import "colors";
 
-  &*:hover {
-    background-color: @dark;
+h1, h2, h3, h4, h5, h6 {
+  color: @text_color;
+  font-family: Lato, sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  .button {
+    background-color: @cyan;
+    border: 1px solid @cyan;
+    padding-top: 2px;
+    border-radius: 15px;
+    text-align: center;
     cursor: pointer;
 
-    a > h2 {
-      color: @text_color;
+    &:hover {
+      background-color: @dark_cyan;
+      border: 1px solid @dark_cyan;
     }
-  }
 
-  a {
-    text-decoration: none;
-
-    h2 {
-      margin: 7px 0px 0px 0px;
-      text-align: center;
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0px auto;
     }
   }
 }
